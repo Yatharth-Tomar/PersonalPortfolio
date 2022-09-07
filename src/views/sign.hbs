@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Signup/login form</title>
+ <link rel="stylesheet" href="css/sign.css">
+ <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ <div class="wrapper">
+  <div class="modelform">
+   <div class="actionBtns">
+    <button class="actionBtn signupBtn">Signup</button>
+    <button class="actionBtn loginBtn">Login</button>
+    <button class="moveBtn  ">Signup</button>
+   </div>
+   <div class="userForm">
+    <form  class="form signup signupform" action="/register" method="post">
+     <div class="inputGroup">
+      <input type="text" placeholder="Name" required name="name">
+     </div>
+     <div class="inputGroup"><input type="text" required placeholder="Your Email" name="email"></div>
+     <div class="inputGroup"> <input type="text" required placeholder="Your Contact number" name="mobile"></div>
+            <div class="inputGroup"><input type="text" required placeholder="Your Password" name="password"></div>
+            <button class="submitBtn" type="submit">Register</button>
+         
+    </form>
+    
+   </div>
+    <div class="userForm">
+    <form action="/login" class="form login " method="post">
+     
+     <div class="inputGroup"><input type="text"  required placeholder="Your Email" name="email"></div>
+     
+            <div class="inputGroup"><input type="text" required placeholder="Your Password" name="password"></div>
+            <button class="submitBtn" type="submit">Login</button>
+         
+    </form>
+    
+   </div>
+  </div>
+ </div>
+<script src="js/sign.js"></script>
+ 
+</body>
+</html>

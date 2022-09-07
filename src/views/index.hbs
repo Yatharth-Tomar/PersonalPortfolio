@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatharth Tomar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/a5b80fbed0.js"
+      crossorigin="anonymous"
+    ></script>
+   
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        {{>navbar}}
+        <div class="{{class}}" role="alert">
+  {{message}}
+    </div>
+        <div class="header-text">
+          <p>WEB Develpor</p>
+          <h1>
+            Hi, I'am <br />
+            <span>Yatharth</span> From India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+      <div class="contaner">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, sapiente quas sed delectus assumenda eius, sequi nam
+              repellat ipsam provident amet, officia itaque veniam. Facere
+              adipisci eum facilis sapiente dolore.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>HTML/CSS</span><br />Creating designs for websites
+                </li>
+                <li>
+                  <span>Nodejs/Express</span><br />creating backened for
+                  websites
+                </li>
+                <li><span>Mongodb</span><br />For storing and managing data</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021</span><br />Lead a group project in C regarding
+                  bank management System
+                </li>
+                <li>
+                  <span>2022</span><br />Lead a 10 member group project for
+                  creaing a website that will help in optimizing biomass supply
+                  chain.
+                </li>
+                <li>
+                  <span>2022</span><br />Created a fully functional rest API
+                  using Mongodb Atlas
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2018</span><br />Class 10th CBSE</li>
+                <li><span>2020</span><br />Class 12th CBSE</li>
+                <li><span>2021</span><br />Joined Btech CSE</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Static Websites</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+              illo exercitationem officiis iste velit cupiditate quo,
+              asperiores, ea, molestiae magnam unde sapiente delectus! Nam,
+              culpa consequatur voluptas delectus ducimus aliquid?
+            </p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Dynamic Websites</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+              illo exercitationem officiis iste velit cupiditate quo,
+              asperiores, ea, molestiae magnam unde sapiente delectus! Nam,
+              culpa consequatur voluptas delectus ducimus aliquid?
+            </p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Data Management</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+              illo exercitationem officiis iste velit cupiditate quo,
+              asperiores, ea, molestiae magnam unde sapiente delectus! Nam,
+              culpa consequatur voluptas delectus ducimus aliquid?
+            </p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p>Helps u to connect with talented people around the globe</p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>E commerce website</h3>
+              <p>For buying clothes</p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Music</h3>
+              <p>Enjoy free music</p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Join the Community</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> @example.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>87911XXXXX</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+
+          <div class="contact-right">
+            <form id="r_form" action="/register" method="post">
+              <input type="text" name="name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                id=""
+                required
+              />
+              <input type="text" placeholder="Your Conatct Number" name="mobile">
+              <input type="password" placeholder="Your Password" name="password">
+              <button class="btn btn2" type="submit">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright © Yathrth Tomar</p>
+      </div>
+    </div>
+
+
+    <script>
+      var sidemenu = document.getElementById('sideMenu');
+
+      function openmenu() {
+        sidemenu.style.right = '0';
+      }
+      function closemenu() {
+        sidemenu.style.right = '-200px';
+      }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    
+    
+  </body>
+</html>
